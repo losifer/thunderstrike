@@ -373,8 +373,8 @@ select {
 
   .column.small-uncentered,
   .columns.small-uncentered {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
     float: left !important; }
 
   .column.small-uncentered.opposite,
@@ -602,8 +602,8 @@ select {
 
   .column.medium-uncentered,
   .columns.medium-uncentered {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
     float: left !important; }
 
   .column.medium-uncentered.opposite,
@@ -951,8 +951,8 @@ select {
 
   .column.large-uncentered,
   .columns.large-uncentered {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
     float: left !important; }
 
   .column.large-uncentered.opposite,
@@ -2211,7 +2211,7 @@ button, .button {
 .flex-video {
   position: relative;
   padding-top: 1.5625rem;
-  padding-bottom: 67.5%;
+  padding-bottom: 57.5%;
   height: 0;
   margin-bottom: 1rem;
   overflow: hidden; }
@@ -3142,9 +3142,7 @@ ul.pagination {
 
 /* Panels */
 .panel {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d8d8d8;
+  
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #f2f2f2; }
@@ -3160,12 +3158,11 @@ ul.pagination {
     .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
       line-height: 1.4; }
   .panel.callout {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #b6edff;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
-    background: #ecfaff; }
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    padding: 0;
+    background: #fff; 
+    text-align: center;}
     .panel.callout > :first-child {
       margin-top: 0; }
     .panel.callout > :last-child {
