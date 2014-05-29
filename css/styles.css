@@ -25,47 +25,11 @@ meta.foundation-data-attribute-namespace {
   font-family: false; }
 
 html, body {
-  height: 100%; }
-
-html, body {
 	width:100%;
 	height:100%;
 	padding:0;
 	margin:0;
 	/* overflow-x:hidden; */
-}
-
-.skrollable {
-	/*
-	 * First-level skrollables are positioned relative to window
-	 */
-	position:fixed;
-
-	/*
-	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
-	 */
-	z-index:100;
-}
-
-.skrollr-mobile .skrollable {
-	/*
-		May cause issues on Android default browser (see #331 on GitHub).
-	*/
-	position:absolute;
-}
-
-.skrollable .skrollable {
-	/*
-	 * Second-level skrollables are positioned relative their parent skrollable
-	 */
-	position:absolute;
-}
-
-.skrollable .skrollable .skrollable {
-	/*
-	 * Third-level (and below) skrollables are positioned static
-	 */
-	position:static;
 }
 
 *,
@@ -90,7 +54,7 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: .7;
   position: relative;
   cursor: default; }
 
@@ -145,7 +109,7 @@ select {
   width: 100%; }
   
 .container {
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.7);
   width: 100%;
   max-width: 100%;
   margin: 0 auto -120px;
@@ -159,6 +123,14 @@ select {
   max-width: 100%;
   margin: -110px auto 0;
   z-index: 1;
+}
+
+.footer-container {
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .row.full-width {
@@ -1602,10 +1574,10 @@ button, .button {
   font-size: 1rem;
   background-color: #000000;
   border-color: #222222;
-  color: white;
+  color: #cc0000;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #cc0000; }
+    background-color: #333333; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -4572,11 +4544,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #cc0000;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #cccccc; }
   a img {
     border: none; }
 
@@ -4601,7 +4573,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Brothers", "Helvetica", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #cc0000;
+  color: #262E3E;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -4612,8 +4584,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;}
 
 h1 {
-  font-size: 2.525rem; 
-  text-shadow: -1px -1px 0px #000,-1px 1px 0px #000,1px -1px 0px #000,1px 1px 0px #000,2px 2px 0px #000; }
+  font-size: 2.525rem; }
 
 h2 {
   font-size: 1.6875rem; }
@@ -4638,7 +4609,14 @@ h6 {
   margin-bottom: 0.5rem; }
 
 hr {
-  border: solid #dddddd;
+  border: solid #333333;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25rem 0 1.1875rem;
+  height: 0; }
+  
+hr.lite {
+  border: solid #cccccc;
   border-width: 1px 0 0;
   clear: both;
   margin: 1.25rem 0 1.1875rem;
@@ -5324,3 +5302,10 @@ th.hide-for-touch {
 
 .centered-text {
     text-align: center; }
+    
+.aligned-left {
+    text-align: left; }
+    
+.white {
+	color: #ffffff;
+}
