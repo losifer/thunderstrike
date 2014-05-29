@@ -22,32 +22,31 @@
 </style>	
 
   </head>
-  <body>
+  <body id="home">
 	<div class="container">
     	
     	<div class="row full-width">
-			<div class="large-12 columns">
+			 <div class="large-12 columns">
 	        	<div class="flex-video">
 	        		<iframe width="1100" height="619" src="//www.youtube.com/embed/ldCxEDOk58A?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
       			</div>
       		</div>
-		</div>
-	</div>
+		  </div>
+	   </div>
+     <div class="row">
+       <div class="large columns centered-text">
+        <a href=""><img src="images/thunder-trucks.svg" width="200" height="200" /></a>
+       </div>
+     </div>
       <div class="second-container">
       
       <div class="row">
-      		<div class="large-12 medium-12 columns">
-				<h1>Thunder Strike Look Book V2</h1>
-				<h4>Look Book Grid</h4>
+      		<div class="large-12 medium-12 columns centered-text">
+				<h1>Thunder Strike Look Book</h1>
+				<p><strong>Thunder Strike</strong> Coming Summer 2014!</p>
+        <hr />
 			</div>
 		</div>
-		 <div class="row">
-          <div class="large-12 columns">
-            <div class="panel">
-              <p><strong>Thunder Strike</strong> Coming Summer 2014!</p>
-            </div>
-          </div>
-        </div>
         
 		<!-- LOOKBOOK ITEMS -->
          
@@ -111,7 +110,9 @@
            </div>    
 		 </div>
 		 <footer class="row">
-			<div class="large-12 medium-12 columns">
+			<div class="large-12 medium-12 columns centered-text">
+      <hr />
+      <a class="button" href="#">Scroll up!</a>
 			</div>
     	</footer>
 	</div>
@@ -120,6 +121,16 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      jQuery(document).ready(function($) {
+  $('.button').click(function(){
+    $('html, body').animate({
+      scrollTop: $("#home").offset().top
+    }, 2000);
+  });
+});
+
+
     </script>
   </body>
 </html>
